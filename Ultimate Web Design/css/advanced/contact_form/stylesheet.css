@@ -1,0 +1,89 @@
+/* Styling Web Forms Lecture */
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3.6em; /* NOTE: 3.6x base font size */
+}
+
+#container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+form {
+  margin-top: 40px;
+}
+
+fieldset {
+  padding: 40px;
+  border: solid 1px #aaa;
+  background: url(blue_background.jpg);
+}
+
+fieldset legend {
+  background: white;
+  padding: 10px;
+  border: solid 1px #aaa;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea
+{
+  padding: 2%;
+  margin: 0 0 20px;
+  border: solid 1px #454545;
+  border-top: none;
+  display: block;
+  width: 46%;
+  font-size: 14px;
+  color: #777;
+  font-family: Monaco, monospace;
+  text-transform: uppercase;
+}
+
+textarea {
+  resize: none; /* NOTE: Removes resize thingy */
+}
+
+label {
+  font-size: 12px;
+  text-transform: uppercase;
+  background: url(red_background.jpg);
+  display: block;
+  width: 46%;
+  padding: 2%;
+  color: white;
+}
+
+input[type="submit"] {
+  background: none;
+  background: url("button_background.jpg");
+  height: 40px;
+  border: none;
+  padding: 0 40px;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  border-color: #444;
+}
+
+input[type="submit"]:active {
+  border-color: #111;
+  outline-color: red;
+}
