@@ -27,6 +27,14 @@ h1#logo {
   text-align: center;
 }
 
+small a {
+  text-decoration: none;
+}
+
+small a:hover {
+  text-decoration: underline;
+}
+
 input[type="search"] {
   width: 580px;
   padding: 12px;
@@ -88,13 +96,24 @@ nav#header ul.rightlinks {
 nav#header ul li#signin {
   background: #4585F1;
   padding: 8px 4px;
-
+  border-radius: 2px;
 }
 
 nav#header ul li#signin a {
   color: white;
   font-weight: bold;
   font-size: 13px;
+}
+
+nav#header ul li#apps-icon a {
+  width: 23px;
+  height: 23px;
+  background-image: url("img/google_apps_icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 23px;
+
+  color: transparent;
 }
 
 nav#header ul li a:link,
