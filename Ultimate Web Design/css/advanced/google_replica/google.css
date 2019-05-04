@@ -1,0 +1,155 @@
+/* Fake Google CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+h1#logo {
+  width: 269px;
+  height: 95px;
+  margin: 155px auto 0;
+  background-image: url("img/googlelogo.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+}
+
+#container {
+  width: 580px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type="search"] {
+  width: 580px;
+  padding: 12px;
+  margin: 22px auto 20px;
+  border: solid 1px #ddd;
+  font-size: 16px;
+  border-radius: 20px;
+
+}
+
+input[type="search"]:hover {
+  border-color: #ccc;
+}
+
+input[type="submit"] {
+  background: #F2F2F2;
+  color: #222222;
+  border: solid 1px #F2F2F2;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  margin: 12px 5px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+small {
+  display: block;
+  margin: 20px 0 0 0;
+  font-size: 13px;
+}
+
+a:link, a:visited {
+  color: dodgerblue;
+}
+
+nav#header {
+  text-align: right;
+  padding: 20px 5px;
+  margin: 4px 25px;
+  margin-left: 10px;
+}
+
+nav#header ul li {
+  display: inline;
+}
+
+nav#header ul {
+  float: left;
+}
+
+nav#header ul.rightlinks {
+  float: right;
+}
+
+nav#header ul li#signin {
+  background: #4585F1;
+  padding: 8px 4px;
+
+}
+
+nav#header ul li#signin a {
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+nav#header ul li a:link,
+nav#header ul li a:visited,
+footer nav ul li a:link,
+footer nav ul li a:visited {
+  color: #555;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav#header ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #eee;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: solid 1px #ddd;
+}
+
+footer #country {
+  padding: 12px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  margin-left: 18px;
+  color: #888;
+}
+
+footer nav {
+  border-top: solid 1px #ddd;
+  padding: 12px;
+  margin: 0 8px;
+}
+
+footer nav ul li {
+  display: inline;
+}
+
+footer nav ul li:hover {
+  text-decoration: underline;
+}
+
+footer nav ul {
+  float: left;
+}
+
+footer nav ul.right-links {
+  float: right;
+}
+
+.clearfix:after  {
+  content: "";
+  display: table;
+  clear: both;
+}
