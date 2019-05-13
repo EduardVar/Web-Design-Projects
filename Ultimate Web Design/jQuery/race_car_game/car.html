@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>jQuery Car Racer</title>
+
+  <link rel="stylesheet" href=css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body id="race">
+  <h1>jQuery Car Racer</h1>
+
+  <input type="button" value="Race!" id="go">
+  <input type="button" value="Reset" id="reset">
+
+  <div id="racetrack">
+    <img src="img/car1.png" alt="Green car" id="car1" class="car">
+    <img src="img/car2.png" alt="Red car" id="car2" class="car">
+  </div>
+
+  <div id="raceInfoContainer" class="clearFix">
+    <h2>Results</h2>
+    <div id="raceInfo1" class=raceInfo>Car 1<span></span></div>
+    <div id="raceInfo2" class=raceInfo>Car 2<span></span></div>
+  </div>
+
+
+  <!-- Online CDN option first -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+  <!-- Uses local version if online unavaliable -->
+  <script>window.jQuery ||
+  document.write('<script src="js/jquery-3.4.1.min.js"><\/script>');</script>
+
+  <script src="js/script.js"></script>
+
+
+</body>
+</html>
