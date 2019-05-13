@@ -1,6 +1,7 @@
 $(function() {
 
   var started = false;
+  var bothDone = false;
 
   // Click the GO button
   $("#go").click(function() {
@@ -16,6 +17,8 @@ $(function() {
           isComplete = true;
         } else {
           place = "second";
+
+          bothDone = true;
         }
 
       }
@@ -82,10 +85,14 @@ $(function() {
 
 
   $("#reset").click(function() {
-    $(".car").css("left","0");
-    $(".raceInfo span").text("");
 
-    started = false;
+    if (bothDone == true) {
+      $(".car").css("left","0");
+      $(".raceInfo span").text("");
+
+      started = false;
+      bothDone = false;
+    }
   });
 
 });
