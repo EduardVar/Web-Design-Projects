@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Helper Classes</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <div class="container">
+      <div class="page-header">
+        <h1>Bootstrap Modal Window</h1>
+        <p class="lead">Easy popup windows without needing CSS or JS!</p>
+      </div><!-- page-header -->
+
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#updateCreditCard">
+        Update credit card</button>
+
+        <!-- Modal -->
+        <form class="modal fade" id="updateCreditCard">
+
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h4 class="modal-title">Update credit card</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+
+
+              <div class="form-group">
+                <label>Name on card</label>
+                <input type="text" placeholder="name on card" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Credit card number</label>
+                <input type="text" placeholder="credit card number" class="form-control">
+              </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                  Cancel</button>
+                <button type="submit" class="btn btn-success">Save changes</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </form>
+
+    </div><!-- container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

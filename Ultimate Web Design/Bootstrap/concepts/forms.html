@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Bootstrap Forms</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Bootstrap Forms</h1>
+        <p class="lead">Let us work with some pre-styled forms.</p>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-sm 4">
+
+          <h2>Register</h2>
+
+          <form>
+            <div class="form-group">
+              <label for="nameIn">Your Name</label>
+              <input type="text" id="nameIn" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="emailIn">Email Adress</label>
+              <input type="email" id="emailIn" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="messsageIn">Your Message</label>
+              <textarea class="form-control" rows="4" id="messsageIn" disabled></textarea> <!-- NOTE: Just add disabled to not allow use -->
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Checkbox
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="formRadio"> Radio Input #1
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="formRadio"> Radio Input #2
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-info">Hello</button>
+          </form>
+
+        </div>
+        <div class="col-sm-8">
+
+          <h2>Login</h2>
+
+          <form class="form-inline">
+            <!-- NOTE: class="sr-only" hides text and is used only for screen readers -->
+            <div class="form-group">
+              <label for="loginEmail" class="sr-only">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend"><span class="input-group-text">@</span></div>
+                <input class="form-control" type="email" id="loginEmail" placeholder="Twitter Handle">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="loginPassword" class="sr-only">Password</label>
+              <input class="form-control" type="password" id="loginPassword"  placeholder="Password">
+            </div>
+
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+
+        </div>
+      </div><!-- row -->
+
+      <br><br><hr>
+
+      <div class="row">
+        <div class="col-sm-6">
+
+          <form class="form-horizontal">
+
+              <div class="form-group">
+                <label class="col-sm-3 control-label">First name</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Last name</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+
+          </form>
+
+        </div>
+      </div><!-- row -->
+
+    </div><!-- container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
