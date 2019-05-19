@@ -6,3 +6,14 @@ h1 #starter-h1 {
   background: pink;
   border: solid 1px #555;
 }
+
+.small-box {
+  width: 300px;
+}
+
+#scrollerBox {
+  position: relative;
+  height: 400px;
+  overflow: auto;
+  border: solid 1px #ccc;
+}
