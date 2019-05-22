@@ -34,16 +34,16 @@
 
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Our Team</a></li>
-            <li><a href="">Contact</a></li>
+            <li class="active"><a href="#" data-scroll="sect-home">Home</a></li>
+            <li><a href="#" data-scroll="sect-about">About</a></li>
+            <li><a href="#" data-scroll="sect-ourTeam">Our Team</a></li>
+            <li><a href="#" data-scroll="sect-contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="cover">
+    <div class="cover" id="sect-home">
       <div class="cover-text">
         <h1>You probably haven&rsquo;t heard of our company.</h1>
         <p class="lead">
@@ -51,7 +51,7 @@
           makes a living repairing antique polaroid cameras, while drinking a
           $38 bottle of artisanal cold-brew.
         </p>
-        <a href="#why-us" role="button" class="btn btn-danger btn-lg">
+        <a href="#" data-scroll="sect-about" role="button" class="btn btn-danger btn-lg">
           Let's get started.
         </a>
       </div>
@@ -69,7 +69,7 @@
       </div>
     </section>
 
-    <section id="why-us">
+    <section id="sect-about">
       <h2>Why Hipstrify.io?</h2>
       <div class="container">
         <div class="row">
@@ -104,7 +104,7 @@
       </div>
     </section>
 
-    <section id="team">
+    <section id="sect-ourTeam">
       <div class="container">
         <h2>Meet our team</h2>
         <div class="row">
@@ -136,7 +136,7 @@
       </div>
     </section>
 
-    <section id="signup">
+    <section id="sect-contact">
       <div class="container">
         <h2>Get our handcrafter newsletter</h2>
         <p class="lead">We'll actually send you real real paper in the mail.
@@ -167,5 +167,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Online CDN option first -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
